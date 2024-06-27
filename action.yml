@@ -1,0 +1,8 @@
+---
+name: "Check artifacts"
+description: "Check if an artifact exists."
+author: "Thibault Cheneviere"
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
