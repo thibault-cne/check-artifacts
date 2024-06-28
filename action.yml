@@ -1,29 +1,29 @@
 ---
-name: "Check artifacts"
-description: "Check if an artifact exists."
-author: "Thibault Cheneviere"
+name: 'Check artifacts'
+description: 'Check if an artifact exists.'
+author: 'Thibault Cheneviere'
 
 inputs:
   name:
-    description: "The name of the artifact to check."
+    description: 'The name of the artifact to check.'
     required: true
   run_id:
-    description: "The run ID of the workflow that produced the artifact."
+    description: 'The run ID of the workflow that produced the artifact.'
     required: true
   token:
-    description: "The token to use to authenticate with the GitHub API."
+    description: 'The token to use to authenticate with the GitHub API.'
     required: true
   owner:
-    description: "The owner of the repository where the artifact is stored."
+    description: 'The owner of the repository where the artifact is stored.'
     required: true
   repo:
-    description: "The repository where the artifact is stored."
+    description: 'The repository where the artifact is stored.'
     required: true
 
 outputs:
   artifact_exists:
-    description: "Whether the artifact exists."
+    description: 'Whether the artifact exists.'
 
 runs:
-  using: "node16"
-  main: "dist/index.js"
+  using: 'node16'
+  main: 'dist/index.js'
